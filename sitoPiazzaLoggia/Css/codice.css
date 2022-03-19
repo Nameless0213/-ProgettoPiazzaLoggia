@@ -1,8 +1,24 @@
-#menu{
+#titolo{
+    color: red;
+    font-size: 90px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#presentazione{
 
 }
+#menu{
+    color: black;
+    background-color: darkgray;
+}
+#menu h4{
+    color: darkorange;
+}
+#menu a:hover{
+    color: aqua;
+}
 body{
-
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 footer{
 
