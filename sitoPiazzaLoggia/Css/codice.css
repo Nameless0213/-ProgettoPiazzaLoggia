@@ -1,214 +1,62 @@
-<<<<<<< HEAD
-#titolo{
+#titolo {
     color: red;
     font-size: 90px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-#presentazione{
 
+#presentazione {}
+
+#menu {
+    color: white;
+    background-color: #f39200;
+    display: flex;
+    flex-flow: row wrap;
 }
-#menu{
-    color: black;
-    background-color: darkgray;
+
+#menu div.bloccoPrimario {
+    flex: auto;
+    order: 1;
 }
-#menu h4{
-    color: darkorange;
+
+#menu div.bloccoRipetibile {
+    flex: auto;
+    order: 2;
 }
-#menu a:hover{
+
+#menu h4 {
+    color: rgba(90, 90, 90, 1);
+}
+
+#menu a:hover {
     color: aqua;
 }
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-footer{
-=======
-/* 
-
-
->>>>>>> 6c1eb43c5cf988389dfc9953ade092b183a67c85
-
-
-
-Questo è quello che avevo usato io per la verifica - Claudio
-
-
-
-
-
 
 html,
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-nav.centro {
-    background-image: linear-gradient(to bottom, rgb(131, 247, 255, 0.3), rgb(61, 24, 40, 0.3)), url(concerto.jpg)
-    background-image: url(concerto.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 80px;
-    margin-right: 80px;
-    border: white;
-    border-style: solid;
-    border-top: none;
-}
-
-#site-header {
-    padding: 25px;
-    padding-bottom: 75px;
-    background: rgb(28, 170, 236);
-    border-style: solid;
-    background-image: url(sfondo.jpg);
-    background-size: cover;
-    background-position: center fixed;
-    background-repeat: no-repeat;
-    color: white;
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-input[type=text],
-input[type=submit],
-input[type=reset],
-select {
-    width: auto;
-    height: 30px;
-    padding: 5px 10px;
-    font-size: 12px;
-    border-radius: 2px 2px 2px 2px;
-    box-sizing: border-box;
-    box-shadow: 0 1px 0 rgb(116, 107, 107);
-    resize: vertical;
-}
-
-#site-header h1 {
-    background-color: black;
-    min-width: 75%;
-    display: inline;
-}
-
-#site-header img {
-    float: left;
-    width: auto 155x;
-    height: auto 155px;
-    padding: 1%;
-    background-color: black;
-    border-radius: 50%;
-    opacity: 0.6;
-}
-
-#site-nav {
-    background: black;
-    color: white;
-}
-
-#main {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-label {
-    display: inline-block;
-}
-
-#main section.content {
-    flex: 3;
-    order: 1;
-    min-width: 20em;
-    min-height: 25em;
-    margin: 5px;
-    padding: 15px;
-    background: rgb(255, 255, 230, 0.6);
-    border-style: solid;
-}
-
-#main aside.sidebar {
-    flex: 1;
-    order: 2;
-    min-width: 12em;
-    min-height: 8em;
-    margin: 5px;
-    padding: 15px;
-    background: rgb(90, 82, 82, 0.6);
-    border-style: groove;
-    color: gold;
-}
-
-#site-header h1 {
-    text-transform: uppercase;
-    margin: 5px;
-    line-height: 80px;
-}
-
-#site-nav {
-    background-color: yellow;
-    width: 380px;
-    border-left-width: 0px;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-}
-
-textarea {
-    width: 75%;
-    height: 30%;
-}
-
-span {
-    font-weight: bold;
-}
-
-#site-footer {
-    background: rgb(41, 36, 62, 0.6);
-    color: white;
-    border-style: solid;
-    border-top: none;
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-#site-footer table.footer-table tr td {
-    border-color: white;
-    border-style: solid;
-    border-bottom: none;
-    border-left: none;
-    border-top: none;
-    border-width: 3px;
+nav#site-nav {
+    box-shadow: 5px 10px 8px rgb(94, 94, 94, 0.4);
+    /* "position: fixed" farà si che, scendendo con la barra, la sezione "nav" rimanga bloccata nello schermo */
+    position: fixed;
     width: 100%;
-    caption-side: bottom;
-    border-collapse: collapse;
 }
 
-aside.sidebar figure#profilepic a {
-    color: darkkhaki;
-}
-
-aside.sidebar figure#profilepic a:hover {
-    color: rgb(138, 133, 73);
-}
-
-#site-nav ul {
+nav#site-nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 5px 0;
-    display: block;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    border-style: solid;
-    border-top: none;
-    border-left: none;
+    padding: 5px;
+    background-color: #f39200;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
-#site-nav ul li {
+nav#site-nav ul li {
     display: inline-block;
     margin-right: 10px;
     padding: 5px;
@@ -223,10 +71,10 @@ aside.sidebar figure#profilepic a:hover {
     height: 22%;
 }
 
-#site-nav ul li a {
+nav#site-nav ul li a {
     font-weight: bold;
     padding: 5px;
-    color: grey;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
@@ -237,102 +85,14 @@ aside.sidebar figure#profilepic a:hover {
     border-top: none;
 }
 
-#site-nav ul li a.active {
-    background: rgb(28, 170, 236);
-    color: white;
-    border-radius: 3px;
-}
-
-#site-nav ul li a:hover {
-    background: rgb(15, 108, 151);
-    border-radius: 3px;
+nav#site-nav ul li a.active {
+    background: #dfb87d;
     color: white;
 }
 
-#main section.content article {
-    margin-bottom: 25px;
-    padding-bottom: 25px;
-    border-bottom: 1px dashed grey;
-}
-
-#main section.content article p {
-    margin-bottom: 2px;
-    text-align: justify;
-    border-radius: 10px;
-}
-
-#main section.content article ul {
-    margin-bottom: 2px;
-    text-align: justify;
-    font-size: large;
-    background: rgb(238, 241, 191);
-    border-radius: 50px;
-}
-
-#profilepic,
-image {
-    margin: 0 0 15px 0;
-}
-
-#profilepic img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
-#site-header #profilepic img {
-    max-width: 150px;
-    border-radius: 50%;
-    background-color: black;
-    position: center fixed;
-}
-
-#image img {
-    width: 10%;
-    max-width: 400px;
-}
-
-#profilepic figcaption {
-    font-style: italic;
-    margin-top: 2px;
-    color: salmon;
-}
-
-img.zoom {
-    transition: transform .2s;
-}
-
-.zoom:hover {
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-section#iconeDecorazione img.zoom {
-    transition: transform .2s;
-}
-
-section#iconeDecorazione img.zoom:hover {
-    -ms-transform: scale(1.015);
-    -webkit-transform: scale(1.015);
-    transform: scale(1.015);
-}
-
-table.orarioTour tr td.I,
-table.orarioTour tr td.II,
-table.orarioTour tr td.III,
-table.orarioTour tr td.IV {
-    transition: transform .2s;
-}
-
-.I:hover,
-.II:hover,
-.III:hover,
-.IV:hover {
-    -ms-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
+nav#site-nav ul li a:hover {
+    transition: ease-in-out 0.3s;
+    background: #bf7608;
 }
 
 #site-nav ul li.zoom {
@@ -345,16 +105,28 @@ li.zoom:hover {
     transform: scale(1.05);
 }
 
-aside.sidebar section {
-    text-align: center;
-} 
-Questo è quello che avevo usato io per la verifica - Claudio
-*/
+div.contenitore {
+    margin-left: 80px;
+    margin-right: 80px;
+    padding-top: 30px;
+    background-color: white;
+}
 
-#menu {}
+footer {
+    background: #f39200;
+    color: white;
+    border-style: solid;
+    border-top: none;
+}
 
-body {}
-
-footer {}
-
-#copyright {}
+footer table.footer-table tr td {
+    border-color: white;
+    border-style: solid;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    border-width: 3px;
+    width: 100%;
+    caption-side: bottom;
+    border-collapse: collapse;
+}
