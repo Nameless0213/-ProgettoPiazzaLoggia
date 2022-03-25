@@ -3,6 +3,7 @@
     font-size: 90px;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 5px 10px 8px rgb(94, 94, 94, 0.4);
 }
 
 #presentazione {}
@@ -45,6 +46,9 @@ nav#site-nav {
     /* "position: fixed" farà si che, scendendo con la barra, la sezione "nav" rimanga bloccata nello schermo */
     position: fixed;
     width: 100%;
+    min-width: fit-content;
+    text-align: initial;
+    box-sizing: content-box;
 }
 
 nav#site-nav ul {
@@ -52,7 +56,7 @@ nav#site-nav ul {
     margin: 0;
     padding: 5px;
     background-color: #f39200;
-    padding-left: 80px;
+    padding-left: 53.33px;
     padding-right: 80px;
 }
 
@@ -108,8 +112,8 @@ li.zoom:hover {
 div.contenitore {
     margin-left: 80px;
     margin-right: 80px;
-    padding-top: 30px;
     background-color: white;
+    padding-top: 30px;
 }
 
 footer {
