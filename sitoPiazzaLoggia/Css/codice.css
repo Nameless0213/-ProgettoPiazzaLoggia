@@ -6,7 +6,11 @@
     text-shadow: 5px 10px 8px rgb(94, 94, 94, 0.4);
 }
 
-ciao 
+.item{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
 
 #menu {
     color: white;
