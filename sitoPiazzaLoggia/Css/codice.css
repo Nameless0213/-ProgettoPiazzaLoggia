@@ -1,50 +1,70 @@
 #titolo {
-    color: red;
-    font-size: 10vw;
+    color: cornflowerblue;
+    font-size: 5vw;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-shadow: 5px 10px 8px rgb(94, 94, 94, 0.4);
+    z-index: 10;
+}
+.sezione{
+    text-align: justify;
 }
 .item{
     width: 100%;
     height: 9%;
     background-color: red;
     z-index: 11;
+    cursor:pointer;
 }
-
+.item:hover{
+    transform: scale(1.1);
+    filter: brightness(0.7);
+    transition: all 0.7s ease-in-out;
+    overflow: hidden;
+}
+h1{
+    color: red;
+    text-align: center;
+}
+h2{
+    color: aqua;
+    text-align: left;
+}
+h3{
+    color: coral;
+}
+.testoDestra{
+    text-align:  right;
+}
+.testoSinistra{
+ text-align: left;
+}
 #menu {
     color: white;
-    background-color: #f39200;
-    display: flex;
+    float: left;
     flex-flow: row wrap;
+    display: table;
+    background-color: cornflowerblue;
+    margin-right: 5%;
+    margin-bottom: 5%;
 }
-
 #menu div.bloccoPrimario {
     flex: auto;
     order: 1;
 }
-
 #menu div.bloccoRipetibile {
     flex: auto;
     order: 2;
 }
-
 #menu h4 {
     color: rgba(90, 90, 90, 1);
 }
-
-#menu a:hover {
-    color: aqua;
-}
-
-html,
-body {
+html,body {
     margin: 0;
     padding: 0;
     background-color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 nav#site-nav {
     box-shadow: 5px 10px 8px rgb(94, 94, 94, 0.4);
     /* "position: fixed" farà si che, scendendo con la barra, la sezione "nav" rimanga bloccata nello schermo */
@@ -55,22 +75,19 @@ nav#site-nav {
     box-sizing: content-box;
     z-index: 12;
 }
-
 nav#site-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 5px;
-    background-color: #f39200;
+    background-color: cornflowerblue;
     padding-left: 53.33px;
     padding-right: 80px;
 }
-
 nav#site-nav ul li {
     display: inline-block;
     margin-right: 10px;
     padding: 5px;
 }
-
 #site-nav ul li img {
     float: right;
     padding: 5px 0;
@@ -79,7 +96,6 @@ nav#site-nav ul li {
     width: 22%;
     height: 22%;
 }
-
 nav#site-nav ul li a {
     font-weight: bold;
     padding: 5px;
@@ -88,41 +104,37 @@ nav#site-nav ul li a {
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     border-style: solid;
-    border-color: white;
+    border-color: black;
     border-right: none;
     border-bottom: none;
     border-top: none;
 }
-
 nav#site-nav ul li a.active {
-    background: #dfb87d;
+    background: cornflowerblue;
     color: white;
 }
-
 nav#site-nav ul li a:hover {
     transition: ease-in-out 0.3s;
-    background: #bf7608;
+    background: cornflowerblue;
 }
-
 #site-nav ul li.zoom {
     transition: transform .2s;
 }
-
 li.zoom:hover {
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
-
 div.contenitore {
     margin-left: 80px;
     margin-right: 80px;
     background-color: white;
     padding-top: 30px;
+    padding-left: 5%;
+    margin-bottom: 5%;
 }
-
 footer {
-    background: #f39200;
+    background: cornflowerblue;
     color: white;
     border-style: solid;
     border-top: none;
@@ -137,4 +149,24 @@ footer table.footer-table tr td {
     width: 100%;
     caption-side: bottom;
     border-collapse: collapse;
+}
+/* unvisited link */
+a:link {
+    font-family: fantasy;
+    text-decoration: none;
+}
+/* visited link */
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    text-decoration: none;
+}
+/* selected link */
+a:active {
+    color: white;
+    text-decoration: none;
 }
