@@ -22,10 +22,6 @@
     transition: all 0.7s ease-in-out;
     overflow: hidden;
 }
-h1{
-    color: red;
-    text-align: center;
-}
 h2{
     color: aqua;
     text-align: left;
@@ -67,7 +63,6 @@ html,body {
 }
 nav#site-nav {
     box-shadow: 5px 10px 8px rgb(94, 94, 94, 0.4);
-    /* "position: fixed" farà si che, scendendo con la barra, la sezione "nav" rimanga bloccata nello schermo */
     position: fixed;
     width: 100%;
     min-width: fit-content;
@@ -125,7 +120,7 @@ li.zoom:hover {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
-div.contenitore {
+div#contenitore {
     margin-left: 80px;
     margin-right: 80px;
     background-color: white;
@@ -150,22 +145,18 @@ footer table.footer-table tr td {
     caption-side: bottom;
     border-collapse: collapse;
 }
-/* unvisited link */
 a:link {
     font-family: fantasy;
     text-decoration: none;
 }
-/* visited link */
 a:visited {
     color: white;
     text-decoration: none;
 }
-/* mouse over link */
 a:hover {
     color: hotpink;
     text-decoration: none;
 }
-/* selected link */
 a:active {
     color: white;
     text-decoration: none;
