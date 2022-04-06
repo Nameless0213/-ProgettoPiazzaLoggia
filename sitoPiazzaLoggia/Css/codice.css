@@ -6,12 +6,13 @@
     text-shadow: 5px 10px 8px rgb(94, 94, 94, 0.4);
     z-index: 10;
     transition: all 0.35s ease-in-out;
-    background-image: url(/sitoPiazzaLoggia/immagini/Brescia-Stemma.png);
+    background-image: url(../immagini/Brescia-Stemma.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 6.25%;
-    opacity: 0;
+    padding: 10px;
+    /*togliere il commento se si vuole utilizzare la classe "animated" nel tag titolo opacity: 0; */
 }
 
 .titolo:hover {
@@ -60,14 +61,14 @@ h3 {
     flex-flow: row wrap;
     display: table;
     background-color: cornflowerblue;
-    margin-right: 5%;
-    margin-bottom: 5%;
+    margin-right: 2%;
+    margin-bottom: 0.5%;
     padding-left: 5px;
     padding-right: 5px;
     cursor: pointer;
     border-radius: 6.25%;
     border-style: dashed;
-    opacity: 0;
+    /*togliere il commento se si usa la classe "animated" per il menu opacity: 0; */
 }
 
 .menu div.bloccoPrimario {
@@ -94,6 +95,7 @@ body {
     padding: 0;
     background-color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 nav#site-nav {
