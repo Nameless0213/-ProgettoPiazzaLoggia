@@ -85,7 +85,6 @@ window.addEventListener('scroll',()=>{
     }
     if(content4Position<screenPosition){//.testo3
         content4.classList.add('opacity');
-        content4.classList.add('fadeInTop');
     }
 });
 /*
