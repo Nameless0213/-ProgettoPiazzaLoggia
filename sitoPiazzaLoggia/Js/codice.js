@@ -28,6 +28,7 @@ window.addEventListener('scroll',()=>{
     let content2=document.querySelector(".testo2");
     let content3=document.querySelector(".testo3");
     let content4=document.querySelector(".titolo");
+    let content5=document.querySelector(".testo1");
     /*
     dichiarazione dei contentPosition:
     restituisce la posizione esatta della pagina dove il contenuto 
@@ -38,6 +39,7 @@ window.addEventListener('scroll',()=>{
     let content2Position=content2.getBoundingClientRect().top;
     let content3Position=content3.getBoundingClientRect().top;
     let content4Position=content4.getBoundingClientRect().top;
+    let content5Position=content5.getBoundingClientRect().top;
     //restituisce il valore del viwerport (dove si guarda) 
     let screenPosition = window.innerHeight;
     /*
@@ -85,6 +87,13 @@ window.addEventListener('scroll',()=>{
     }
     if(content4Position<screenPosition){//.titolo
         content4.classList.add('opacity');
+    }
+    if(content5Position<screenPosition){//.testo1
+        content5.classList.add('opacity');
+        content5.classList.add('fadeInLeft');
+    }else{
+        content5.classList.remove('opacity');
+        content5.classList.remove('fadeInLeft');
     }
 });
 /*

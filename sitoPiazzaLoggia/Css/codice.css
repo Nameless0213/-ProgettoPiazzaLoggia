@@ -76,6 +76,15 @@ h3 {
 .opacity{
     opacity: 1;
 }
+.testo1{
+    opacity: 0;
+}
+.testo2{
+    opacity: 0;
+}
+.testo3{
+    opacity: 0;
+}
 .menu div.bloccoPrimario {
     flex: auto;
     border-style: double;
