@@ -83,7 +83,7 @@ window.addEventListener('scroll',()=>{
         content3.classList.remove('opacity');
         content3.classList.remove('fadeInLeft');
     }
-    if(content4Position<screenPosition){//.testo3
+    if(content4Position<screenPosition){//.titolo
         content4.classList.add('opacity');
     }
 });
