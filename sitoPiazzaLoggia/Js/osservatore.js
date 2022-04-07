@@ -11,12 +11,11 @@
 observer1.observe(document.querySelector(".contenitore")); */
 
 //comparsa elementi
-const observerTitolo = new IntersectionObserver(entries => {
+/*const observerTitolo = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             document.querySelectorAll(".animated")[0].classList.add("fadeInTop");
             observerTitolo.disconnect();
-
             observerintroduzione = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -49,8 +48,6 @@ const observerTitolo = new IntersectionObserver(entries => {
 })
 observerTitolo.observe(document.querySelector(".titolo"));
 
-
-
 const observer3 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -62,7 +59,6 @@ const observer3 = new IntersectionObserver(entries => {
 })
 observer3.observe(document.querySelector(".testo2"));
 
-
 const observer4 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -73,4 +69,4 @@ const observer4 = new IntersectionObserver(entries => {
 }, {
     threshold: 0.3
 })
-observer4.observe(document.querySelector(".testo3"));
+observer4.observe(document.querySelector(".testo3"));*/
