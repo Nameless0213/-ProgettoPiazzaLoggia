@@ -18,6 +18,10 @@
     color: #f3c600;
     cursor: pointer;
 }
+.flex {
+    max-width: 100%;
+    max-height: 9%;
+}
 .sezione {
 
     text-align: justify;
