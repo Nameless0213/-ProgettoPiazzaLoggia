@@ -13,6 +13,7 @@
     padding: 10px;
     transition: all 2s; 
     transform: scale(1); 
+    opacity: 0;
 }
 .titolo:hover {
     color: #f3c600;
