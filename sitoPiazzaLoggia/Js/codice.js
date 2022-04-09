@@ -15,7 +15,7 @@ $(document).ready(function() {
 });
 
 //inizio della funzione scroll (automatica)
-window.addEventListener('scroll',()=>{
+window.addEventListener('scroll', () => {
     /*
     dichiarazione dei content:
     un contenuto con un nome qualsiasi esempio: content, 
@@ -23,23 +23,23 @@ window.addEventListener('scroll',()=>{
     così facendo esraiamo dalla nostra pagina web con la funzione querySelector("qualcosa") 
     e lo possiamo usare come una variabile ecc...
     */
-    let content=document.querySelector(".menu");
-    let content1=document.querySelector(".introduzione");
-    let content2=document.querySelector(".testo2");
-    let content3=document.querySelector(".testo3");
-    let content4=document.querySelector(".titolo");
-    let content5=document.querySelector(".testo1");
+    let content = document.querySelector(".menu");
+    let content1 = document.querySelector(".introduzione");
+    let content2 = document.querySelector(".testo2");
+    let content3 = document.querySelector(".testo3");
+    let content4 = document.querySelector(".titolo");
+    let content5 = document.querySelector(".testo1");
     /*
     dichiarazione dei contentPosition:
     restituisce la posizione esatta della pagina dove il contenuto 
     si trova, come per esempio: .menu
     */
-    let contentPosition=content.getBoundingClientRect().top;
-    let content1Position=content1.getBoundingClientRect().top;
-    let content2Position=content2.getBoundingClientRect().top;
-    let content3Position=content3.getBoundingClientRect().top;
-    let content4Position=content4.getBoundingClientRect().top;
-    let content5Position=content5.getBoundingClientRect().top;
+    let contentPosition = content.getBoundingClientRect().top;
+    let content1Position = content1.getBoundingClientRect().top;
+    let content2Position = content2.getBoundingClientRect().top;
+    let content3Position = content3.getBoundingClientRect().top;
+    let content4Position = content4.getBoundingClientRect().top;
+    let content5Position = content5.getBoundingClientRect().top;
     //restituisce il valore del viwerport (dove si guarda) 
     let screenPosition = window.innerHeight;
     /*
@@ -59,27 +59,27 @@ window.addEventListener('scroll',()=>{
     se si vuole far comparire qualcosa e poi l'asciarlo "fisso" basta togliere l'else in cui viene rimosso il css.
     scale fa lo scale a 1 di base in caso si modifica ma ricordate che cambia anche quelli degli altri content.
     */
-    if(contentPosition<screenPosition){//.menu
+    if (contentPosition < screenPosition) { //.menu
         content.classList.add('opacity');
         content.classList.add('fadeInLeft');
     }
-    if(content1Position<screenPosition){//.introduzione
+    if (content1Position < screenPosition) { //.introduzione
         content1.classList.add('scale');
     }
-    if(content2Position<screenPosition){//.testo2
+    if (content2Position < screenPosition) { //.testo2
         content2.classList.add('opacity');
         content2.classList.add('fadeInRight');
     }
-    if(content3Position<screenPosition){//.testo3
+    if (content3Position < screenPosition) { //.testo3
         content3.classList.add('opacity');
         content3.classList.add('fadeInLeft');
     }
-    if(content4Position<screenPosition){//.titolo
+    if (content4Position < screenPosition) { //.titolo
         content4.classList.add('opacity');
     }
-    if(content5Position<screenPosition){//.testo1
+    if (content5Position < screenPosition) { //.testo1
         content5.classList.add('opacity');
-        content5.classList.add('fadeInLeft');
+        content5.classList.add('fadeInRight');
     }
 });
 /*
@@ -101,6 +101,3 @@ for(const target of targets){
     observer.observe(target);
 }
 */
-
-
-

@@ -11,43 +11,57 @@
     background-repeat: no-repeat;
     background-size: 6.25%;
     padding: 10px;
-    transition: all 2s; 
-    transform: scale(1); 
+    transition: all 2s;
+    transform: scale(1);
     opacity: 0;
 }
+
 .titolo:hover {
     color: #f3c600;
     cursor: pointer;
 }
-.sezione {
 
+.sezione {
     text-align: justify;
 }
+
 .item {
     width: 100%;
     height: 9%;
     background-color: red;
     z-index: 11;
 }
+
 .item:hover {
     transform: scale(1.1);
     transition: ease-in-out 0.3s;
     transition: all 0.7s ease-in-out;
     overflow: hidden;
 }
+
 h2 {
     color: aqua;
     text-align: left;
 }
+
 h3 {
     color: coral;
 }
+
 .testoDestra {
     text-align: right;
 }
+
 .testoSinistra {
     text-align: left;
 }
+
+h2.titoloSezioneVideo {
+    text-align: center;
+    color: coral;
+    font-weight: bold;
+}
+
 .menu {
     color: white;
     float: left;
@@ -65,27 +79,155 @@ h3 {
     transform: scale(0.1);
     transition: all 1s ease-in-out;
 }
-.introduzione{
-    opacity: 0;
-    transform: scale(0.1);
-    transition: all 1s ease-in-out;
+
+
+/* https://codepen.io/jadlimcaco/pen/ExjGrqJ */
+
+
+/* modello carino per una sezione, avevo provato con l'introduzione. se lo si vuole usare si va a commentare, nel js, l'if di .introduzione */
+
+
+/* .introduzione {
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    position: relative;
+    border: solid 3px #6e7491;
+    padding: 40px 60px;
+    width: 70%;
+    line-height: 28px;
+    transform: rotate(-1deg);
+    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+    transition: all 0.13s ease-in;
 }
-.scale{
+
+.introduzione:hover {
+    transform: translateX(-10px) rotate(1deg);
+    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
+
+.introduzione:hover .border {
+    transform: translateY(4px) rotate(-5deg);
+} */
+
+.introduzione {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 1.5s ease-in-out;
+}
+
+.scale {
     opacity: 1;
     transform: scale(1);
 }
-.opacity{
+
+.opacity {
     opacity: 1;
 }
-.testo1{
+
+.testo1,
+.testo2,
+.testo3 {
     opacity: 0;
 }
-.testo2{
-    opacity: 0;
+
+.dropdown div {
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px 0;
+    border-radius: 25px;
+    transition: 0.3s;
+    border-bottom: none;
 }
-.testo3{
-    opacity: 0;
+
+.dropdown {
+    width: 40px;
+    display: block;
+    margin: 1em 0 0 1em;
+    border-bottom: none;
+    align-content: center;
 }
+
+.one {
+    width: 40px;
+}
+
+.two {
+    width: 30px;
+}
+
+.three {
+    width: 35px;
+}
+
+div.dropdown:hover div {
+    width: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+    margin-top: 237px;
+}
+
+.parteCentraleConVideo h3.menuVideo {
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: cornflowerblue;
+    color: #f7ee6d;
+    width: 100%;
+    min-width: 175px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content button {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: cornflowerblue;
+    transition: 0.3s;
+    margin-bottom: 5px;
+    box-shadow: 5px 10px 8px rgb(94, 94, 94, 0.4);
+}
+
+.dropdown-content button:hover {
+    background-color: #f7ee6d;
+    transform: scale(1.05);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.parteCentraleConVideo {
+    display: flex;
+    gap: 50px;
+}
+
+.parteCentraleConVideo div.dropdown {
+    flex: auto;
+    border-style: double;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    order: 2;
+}
+
+.parteCentraleConVideo div.video {
+    flex: auto;
+    order: 1;
+}
+
 .menu div.bloccoPrimario {
     flex: auto;
     border-style: double;
@@ -94,20 +236,25 @@ h3 {
     border-right: none;
     order: 1;
 }
+
 .menu div.bloccoRipetibile {
     flex: auto;
     order: 2;
 }
+
 .menu h4 {
     color: rgba(90, 90, 90, 1);
 }
-html,body {
+
+html,
+body {
     margin: 0;
     padding: 0;
     background-color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow-x: hidden;
 }
+
 nav#site-nav {
     box-shadow: 5px 10px 8px rgb(94, 94, 94, 0.4);
     position: fixed;
@@ -117,6 +264,7 @@ nav#site-nav {
     box-sizing: content-box;
     z-index: 12;
 }
+
 nav#site-nav ul {
     list-style-type: none;
     margin: 0;
@@ -125,11 +273,13 @@ nav#site-nav ul {
     padding-left: 53.33px;
     padding-right: 80px;
 }
+
 nav#site-nav ul li {
     display: inline-block;
     margin-right: 10px;
     padding: 5px;
 }
+
 #site-nav ul li img {
     float: right;
     padding: 5px 0;
@@ -138,6 +288,7 @@ nav#site-nav ul li {
     width: 22%;
     height: 22%;
 }
+
 nav#site-nav ul li a {
     font-weight: bold;
     padding: 5px;
@@ -146,36 +297,44 @@ nav#site-nav ul li a {
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 nav#site-nav ul li a.active {
     background: #f7ee6d;
     color: #888780;
 }
+
 nav#site-nav ul li a:hover {
     transition: ease-in-out 0.3s;
     background: #f7e06d;
 }
+
 #site-nav ul li.zoom {
     transition: transform .2s;
 }
+
 li.zoom:hover {
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
+
 div#contenitore {
     margin-left: 80px;
     margin-right: 80px;
     background-color: white;
     padding-top: 30px;
     padding-left: 5%;
+    padding-right: 5%;
     margin-bottom: 5%;
 }
+
 footer {
     background: cornflowerblue;
     color: white;
     border-style: solid;
     border-top: none;
 }
+
 footer table.footer-table tr td {
     border-color: white;
     border-style: solid;
@@ -187,34 +346,58 @@ footer table.footer-table tr td {
     caption-side: bottom;
     border-collapse: collapse;
 }
+
 a:link {
     font-family: fantasy;
     text-decoration: none;
 }
+
 a:visited {
     color: white;
     text-decoration: none;
 }
+
 a:hover {
     color: hotpink;
     text-decoration: none;
 }
+
 a:active {
     color: white;
     text-decoration: none;
 }
+
+.video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 /* comparsa elementi */
+
+
 /*
 .animated {
     width: 100%;
     opacity: 0;
 }
 */
+
 .fadeInLeft {
-    -webkit-animation: fadeInLeft 1.2s both;
-    -moz-animation: fadeInLeft 1.2s both;
-    -o-animation: fadeInLeft 1.2s both;
-    animation: fadeInLeft 1.2s both;
+    -webkit-animation: fadeInLeft 1.5s both;
+    -moz-animation: fadeInLeft 1.5s both;
+    -o-animation: fadeInLeft 1.5s both;
+    animation: fadeInLeft 1.5s both;
 }
 
 @-webkit-keyframes fadeInLeft {
@@ -262,12 +445,11 @@ a:active {
 }
 
 .fadeInTop {
-    -webkit-animation: fadeInTop 1.2s both;
-    -moz-animation: fadeInTop 1.2s both;
-    -o-animation: fadeInTop 1.2s both;
-    animation: fadeInTop 1.2s both;
+    -webkit-animation: fadeInTop 1.5s both;
+    -moz-animation: fadeInTop 1.5s both;
+    -o-animation: fadeInTop 1.5s both;
+    animation: fadeInTop 1.5s both;
 }
-
 
 @-webkit-keyframes fadeInTop {
     0% {
@@ -314,10 +496,10 @@ a:active {
 }
 
 .fadeInRight {
-    -webkit-animation: fadeInRight 1.2s both;
-    -moz-animation: fadeInRight 1.2s both;
-    -o-animation: fadeInRight 1.2s both;
-    animation: fadeInRight 1.2s both;
+    -webkit-animation: fadeInRight 1.5s both;
+    -moz-animation: fadeInRight 1.5s both;
+    -o-animation: fadeInRight 1.5s both;
+    animation: fadeInRight 1.5s both;
 }
 
 @-webkit-keyframes fadeInRight {
