@@ -170,8 +170,7 @@ div.dropdown:hover div {
 .dropdown {
     position: relative;
     display: inline-block;
-    margin: 0px 0px 0px 0px;
-    margin-top: 237px;
+    margin-bottom: 170px;
 }
 
 .parteCentraleConVideo h3.menuVideo {
@@ -184,9 +183,10 @@ div.dropdown:hover div {
     background-color: cornflowerblue;
     color: #f7ee6d;
     width: 100%;
-    min-width: 175px;
+    min-width: 25%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    display: block;
 }
 
 .dropdown-content button {
