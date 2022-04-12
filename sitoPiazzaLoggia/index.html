@@ -74,23 +74,17 @@
         <br>
         <br>
         <br>
-        <h2 class="titoloSezioneVideo">Video</h2>
-        <br>
-        <div class="parteCentraleConVideo">
-            <div class="dropdown">
-                <h3 class="menuVideo">Menu</h1>
-                    <div class="one"></div>
-                    <div class="two"></div>
-                    <div class="three"></div>
-                    <div class="dropdown-content">
-                        <button id="bottone1" onclick="video1()">Siamo Noi - Strage di Piazza della Loggia</button>
-                        <button id="bottone2" onclick="video2()">Registrazione Audio Strage Brescia 1974</button>
-                        <button id="bottone3" onclick="video3()">Blu Notte Misteri Italiani - Piazza Della Loggia Brescia</button>
-                    </div>
-            </div>
-            <div class="video">
-                <iframe id="video-cambiabile" width="840" height="473" src="https://www.youtube.com/embed/Jq2gagTQvDw" frameborder="0" allowfullscreen frameborder="0" allow="encrypted-media"></iframe>
-            </div>
+        <div class="dropdown">
+            <h3 class="menuVideo">Video</h1>
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <a id="link1">Siamo Noi - Strage di Piazza della Loggia</a> <br>
+                <a id="link2">Registrazione Audio Strage Brescia 1974</a> <br>
+                <a id="link3">Blu Notte Misteri Italiani - Piazza Della Loggia Brescia</a> <br>
+        </div>
+        <div class="video">
+            <iframe id="video-cambiabile" width="840" height="473" src="https://www.youtube.com/embed/Jq2gagTQvDw" frameborder="0" allowfullscreen frameborder="0" allow="encrypted-media"></iframe>
         </div>
         <br>
         <br>
@@ -189,14 +183,17 @@
     </footer>
 </body>
 <script type="text/javascript">
-    document.getElementById("bottone1").onclick = function() {
-        document.getElementById('video-cambiabile').src = "https://www.youtube.com/embed/Jq2gagTQvDw";
+    document.getElementById("link1").onclick = function() {
+        if (document.getElementById('video-cambiabile').src != "https://www.youtube.com/embed/Jq2gagTQvDw")
+            document.getElementById('video-cambiabile').src = "https://www.youtube.com/embed/Jq2gagTQvDw";
     };
-    document.getElementById("bottone2").onclick = function() {
-        document.getElementById('video-cambiabile').src = "https://www.youtube.com/embed/tlivrFxE17A";
+    document.getElementById("link2").onclick = function() {
+        if (document.getElementById('video-cambiabile').src != "https://www.youtube.com/embed/tlivrFxE17A")
+            document.getElementById('video-cambiabile').src = "https://www.youtube.com/embed/tlivrFxE17A";
     };
-    document.getElementById("bottone3").onclick = function() {
-        document.getElementById('video-cambiabile').src = "https://www.youtube.com/embed/EnfC5pmqpdk";
+    document.getElementById("link3").onclick = function() {
+        if (document.getElementById('video-cambiabile').src != "https://www.youtube.com/embed/EnfC5pmqpdk")
+            document.getElementById('video-cambiabile').src = "https://www.youtube.com/embed/EnfC5pmqpdk";
     };
 </script>
 
