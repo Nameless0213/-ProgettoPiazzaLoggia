@@ -17,36 +17,70 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     </head>
-    <body style="background-color: lightgray;">
+    <body style="background-color: white;">
         <script src="Js\codice.js"></script>
         <!--<script src="Js/osservatore.js"></script>-->
-        <nav id="site-nav">
+        <nav id="site-nav" >
             <ul>
-                <li class="zoom"><a class="active" title="Home">Home</a></li>
-                <li class="zoom"><a href="orari.html" title="Orari">Altro1</a></li>
-                <li class="zoom"><img src="immagini/iscrivitiIcona_reduced.png"><a href="form.html" title="Iscriviti">Altro2</a></li>
+                <li class="zoom borderSolid"><a class="active" title="Home">Home</a></li>
+                <li class="zoom borderSolid"><a href="#" title="vittime">vittime</a></li>
+                <li class="zoom borderSolid"><a href="#" title="sospettati">sospettati</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle borderSolid" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">altro</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="#" title="inteligence">intelligence statunitense</a></li>
+                      <li><a class="dropdown-item" href="#"  title="attacchi terroristici">Elenco degli attacchi terroristici di destra</a></li>
+                      <li><a class="dropdown-item" href="#" title="anni di piombo">Anni di piombo</a></li>
+                    </ul>
+                </li>
+                <!---<li class="zoom"><img src="immagini/iscrivitiIcona_reduced.png"><a href="form.html" title="Iscriviti">Altro2</a></li>-->
             </ul>
         </nav>
         <br>
         <br>
         <div class="titolo fadeInTop">piazza Loggia</div>
         <br>
-        <section class="owl-carousel owl-theme">
-            <div class="item"><img class="flex" src="immagini/immagine1.jpg"></div>
-            <div class="item"><img class="flex" src="immagini/immagine2.jpg"></div>
-            <div class="item"><img class="flex" src="immagini/immagine3.jpg"></div>
-            <div class="item"><img class="flex" src="immagini/immagine4.jpg"></div>
-            <div class="item"><img class="flex" src="immagini/immagine5.jpg"></div>
-            <div class="item"><img class="flex" src="immagini/immagine6.jpg"></div>
-            <div class="item"><img class="flex" src="immagini/immagine7.jpg"></div>
-            <div class="item"><h4>8</h4></div>
-            <div class="item"><h4>9</h4></div>
-            <div class="item"><h4>10</h4></div>
-            <div class="item"><h4>11</h4></div>
-            <div class="item"><h4>12</h4></div>
-        </section>
+        
         <div id="contenitore">
             <div id="subContenitore">
+                
+               <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="..." class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>-->
+
+                <section class="owl-carousel owl-theme">
+                    <div class="item"><img class="flex" src="immagini/immagine1.jpg"></div>
+                    <div class="item"><img class="flex" src="immagini/immagine2.jpg"></div>
+                    <div class="item"><img class="flex" src="immagini/immagine3.jpg"></div>
+                    <div class="item"><img class="flex" src="immagini/immagine4.jpg"></div>
+                    <div class="item"><img class="flex" src="immagini/immagine5.jpg"></div>
+                    <div class="item"><img class="flex" src="immagini/immagine6.jpg"></div>
+                    <div class="item"><img class="flex" src="immagini/immagine7.jpg"></div>
+                    <div class="item"><h4>8</h4></div>
+                    <div class="item"><h4>9</h4></div>
+                    <div class="item"><h4>10</h4></div>
+                    <div class="item"><h4>11</h4></div>
+                    <div class="item"><h4>12</h4></div>
+                </section>
                 <br>
                 <div class="introduzione">
                     <h2>introduzione</h2>
@@ -59,7 +93,7 @@
                 <br>
                 <br>
                 <div class="menu">
-                    <div class="bloccoPrimario" style="float: left;">
+                    <!--<div class="bloccoPrimario" style="float: left;">
                         <table>
                             <h4>argomenti principali</h4>
                             <tr>
@@ -80,7 +114,7 @@
                                 <ol>sezione 4 sito</ol>
                             </tr>
                         </table>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="argomento" >
                     <div class="testo1" >
