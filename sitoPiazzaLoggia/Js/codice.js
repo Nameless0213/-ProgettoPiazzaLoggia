@@ -23,8 +23,9 @@ window.addEventListener('scroll',()=>{
     così facendo esraiamo dalla nostra pagina web con la funzione querySelector("qualcosa") 
     e lo possiamo usare come una variabile ecc...
     */
-    let content=document.querySelector(".menu");
     let content1=document.querySelector(".introduzione");
+    let content=document.querySelector(".testo4");
+    
     let content2=document.querySelector(".testo2");
     let content3=document.querySelector(".testo3");
     let content4=document.querySelector(".titolo");
@@ -59,7 +60,7 @@ window.addEventListener('scroll',()=>{
     se si vuole far comparire qualcosa e poi l'asciarlo "fisso" basta togliere l'else in cui viene rimosso il css.
     scale fa lo scale a 1 di base in caso si modifica ma ricordate che cambia anche quelli degli altri content.
     */
-    if(contentPosition<screenPosition){//.menu
+    if(contentPosition<screenPosition){//.testo4
         content.classList.add('opacity');
         content.classList.add('fadeInLeft');
     }/*else{

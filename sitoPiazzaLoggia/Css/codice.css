@@ -45,7 +45,7 @@ h3 {
 .testoSinistra {
     text-align: left;
 }
-.menu {
+/*.menu {
     color: white;
     float: left;
     flex-flow: row wrap;
@@ -61,7 +61,7 @@ h3 {
     opacity: 0;
     transform: scale(0.1);
     transition: all 1s ease-in-out;
-}
+}*/
 .introduzione{
     opacity: 0;
     transform: scale(0.1);
@@ -83,7 +83,10 @@ h3 {
 .testo3{
     opacity: 0;
 }
-.menu div.bloccoPrimario {
+.testo4{
+    opacity: 0;
+}
+/*.menu div.bloccoPrimario {
     flex: auto;
     border-style: double;
     border-top: none;
@@ -97,7 +100,7 @@ h3 {
 }
 .menu h4 {
     color: rgba(90, 90, 90, 1);
-}
+}*/
 html,body {
     margin: 0;
     padding: 0;
@@ -116,8 +119,9 @@ nav#site-nav {
 }
 nav#site-nav ul {
     list-style-type: none;
+    text-align: center;
     margin: 0;
-    padding: 5px;
+    padding: 0%;
     background-color: cornflowerblue;
     padding-left: 53.33px;
     padding-right: 80px;
@@ -125,7 +129,6 @@ nav#site-nav ul {
 nav#site-nav ul li {
     display: inline-block;
     padding: 5px;
-    
     box-sizing: border-box;
 }
 .borderSolid{
