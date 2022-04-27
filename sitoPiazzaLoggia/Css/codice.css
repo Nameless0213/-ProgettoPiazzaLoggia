@@ -117,15 +117,6 @@ nav#site-nav{
     box-sizing: content-box;
     z-index: 12;
 }
-#lista1{
-    order: 1;
-    flex: auto;
-}
-#lista2{
-    order: 2;
-    flex: auto;
-    float: right;
-}
 nav#site-nav ul {
     list-style-type: none;
     margin: 0;
@@ -139,12 +130,7 @@ nav#site-nav ul li {
     padding: 5px;
     box-sizing: border-box;
 }
-nav#site-nav ul li.zoom{
-    float: left;
-}
-nav#site-nav ul li.nav-item .dropdown{
-    float: right;
-}
+
 .borderSolid{
     border-right: 2px solid white;
 }
