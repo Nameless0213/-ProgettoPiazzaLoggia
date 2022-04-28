@@ -23,6 +23,7 @@ window.addEventListener('scroll',()=>{
     così facendo esraiamo dalla nostra pagina web con la funzione querySelector("qualcosa") 
     e lo possiamo usare come una variabile ecc...
     */
+
     let content1=document.querySelector(".introduzione");
     let content=document.querySelector(".testo4");
     let content2=document.querySelector(".testo2");
