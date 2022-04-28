@@ -10,7 +10,7 @@
     text-shadow: 5px 10px 8px rgb(94, 94, 94, 0.4);
     transition: all 2s; 
     transform: scale(1); 
-    background-color: white;
+    background-color: transparent;
     box-sizing: 100%;
 }
 .titolo:hover {
@@ -112,6 +112,7 @@ nav#site-nav{
     box-shadow: 5px 10px 8px rgb(94, 94, 94, 0.4);
     position: fixed;
     width: 100%;
+    font-size: larger;
     min-width: fit-content;
     text-align: initial;
     box-sizing: content-box;
@@ -134,13 +135,9 @@ nav#site-nav ul li {
 .borderSolid{
     border-right: 2px solid white;
 }
-#site-nav ul li img {
-    float: right;
-    padding: 5px 0;
-    padding-top: 0px;
+nav#site-nav img {
     display: block;
-    width: 22%;
-    height: 22%;
+    width: 100%;
 }
 nav#site-nav ul li a {
     font-weight: bold;
