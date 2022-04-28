@@ -160,6 +160,11 @@ h3 {
     border: none;
 }
 
+.dropdown ul {
+    opacity: 0;
+    transition: all 0.3s;
+}
+
 .dropdown a {
     opacity: 0;
     display: inline-block;
@@ -173,6 +178,7 @@ h3 {
     text-align: left;
 }
 
+.dropdown:hover ul,
 .dropdown:hover a {
     opacity: 1;
 }
@@ -190,6 +196,21 @@ h3 {
     border-left: none;
     border-right: none;
     order: 1;
+}
+
+.video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .menu div.bloccoRipetibile {
@@ -320,22 +341,6 @@ a:hover {
 a:active {
     color: white;
     text-decoration: none;
-}
-
-.video {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-}
-
-.video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-right: 50px;
 }
 
 
