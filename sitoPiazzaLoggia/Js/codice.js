@@ -25,7 +25,6 @@ window.addEventListener('scroll',()=>{
     */
     let content1=document.querySelector(".introduzione");
     let content=document.querySelector(".testo4");
-    
     let content2=document.querySelector(".testo2");
     let content3=document.querySelector(".testo3");
     let content4=document.querySelector(".titolo");

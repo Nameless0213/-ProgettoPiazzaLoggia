@@ -19,59 +19,71 @@
     </head>
     <body style="background-color: white;">
         <script src="Js/codice.js"></script>
+        <script type="text/javascript">
+            document.getElementById("link1").onclick = function() {
+                if (document.getElementById('video-cambiabile').src != "https://www.youtube.com/embed/Jq2gagTQvDw")
+                    document.getElementById('video-cambiabile').src = "https://www.youtube.com/embed/Jq2gagTQvDw";
+            };
+            document.getElementById("link2").onclick = function() {
+                if (document.getElementById('video-cambiabile').src != "https://www.youtube.com/embed/tlivrFxE17A")
+                    document.getElementById('video-cambiabile').src = "https://www.youtube.com/embed/tlivrFxE17A";
+            };
+            document.getElementById("link3").onclick = function() {
+                if (document.getElementById('video-cambiabile').src != "https://www.youtube.com/embed/EnfC5pmqpdk")
+                    document.getElementById('video-cambiabile').src = "https://www.youtube.com/embed/EnfC5pmqpdk";
+            };
+        </script>
         <!--<script src="Js/osservatore.js"></script>   style="display: flex;"-->
         <nav id="site-nav" style="flex-wrap: inherit; ">
-            <div>
                 <ul>
-                    <li class="zoom borderSolid"><a class="active" title="Home">Home</a></li>
-                    <li class="zoom borderSolid"><a href="#" title="vittime">vittime</a></li>
+                    <li class="zoom borderSolid"><a class="active" href="#Home" title="Home">Home</a></li>
+                    <li class="zoom borderSolid"><a href="paginehtml/vittime.html" title="vittime">vittime</a></li>
                     <li class="zoom borderSolid"><a href="sospettati.html" title="sospettati">sospettati</a></li>
                     <li class="nav-item dropdown justify-content-center float-end" style="margin: 0%; padding: 0%;">
                         <a class="nav-link dropdown-toggle"   data-bs-toggle="dropdown" role="button" aria-expanded="false">altro</a>
                         <ul class="dropdown-menu dropdown-menu-end" style="padding: 0%; border-radius: 0%;text-align: left;">
-                            <li><a class="dropdown-item" href="#" title="inteligence">intelligence statunitense</a></li>
-                            <li><a class="dropdown-item" href="#"  title="attacchi terroristici">attacchi terroristici</a></li>
-                            <li><a class="dropdown-item" href="#" title="anni di piombo">Anni di piombo</a></li><br>
-                            <li><a class="dropdown-item" href="#" title="crediti">crediti</a></li>
+                            <li><a class="dropdown-item" href="#inteligence" title="inteligence">intelligence statunitense</a></li>
+                            <li><a class="dropdown-item" href="#attacchi terroristici"  title="attacchi terroristici">attacchi terroristici</a></li>
+                            <li><a class="dropdown-item" href="#anni di piombo" title="anni di piombo">Anni di piombo</a></li><br>
+                            <li><a class="dropdown-item" href="#crediti" title="crediti">crediti</a></li>
                         </ul>
-                        
                     </li>
-                    <!---<li class="zoom"><img src="immagini/iscrivitiIcona_reduced.png"><a href="form.html" title="Iscriviti">Altro2</a></li>-->
-                    <img src="immagini/blue_bottom.png" style="background-color: white;width: 100%;max-width: inherit" alt="...">
                 </ul>
-                
-            </div>
-            
+                <img src="immagini/blue_bottom.png" style="background-color: transparent;width: 100%;max-width: inherit;    transform: translateY(100%);bottom: 0.0625rem;transition: 0.3s ease transform;" alt="...">
         </nav>
-        
         <br>
-        
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <br>
+        <br>
+        <div  class="titolo fadeInTop " style="text-align: center;">piazza Loggia</div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
             </div>
-            
-            
-            
-            
-                <div class="carousel-inner">
-                    
-                    <div class="carousel-item active">
-                        <img src="immagini/immagine1.jpg" class="d-block w-100" alt="...">
-                        <div  class="titolo fadeInTop " style="text-align: center;">piazza Loggia</div>
-            
-                    </div>
-                    <div class="carousel-item">
-                        <img src="immagini/immagine2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="immagini/immagine3.jpg" class="d-block w-100" alt="...">
-                    </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="immagini/immagine1.jpg" class="d-block w-100" alt="...">
                 </div>
-            
-            
+                <div class="carousel-item">
+                    <img src="immagini/immagine1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="immagini/immagine3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="immagini/immagine2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="immagini/immagine1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="immagini/immagine3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -81,22 +93,8 @@
             <span class="visually-hidden">Next</span>
             </button>
         </div>
-
-
         <div id="contenitore">
             <div id="subContenitore">
-               
-               
-
-
-
-
-
-
-
-
-
-
                 <!--<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <section class="owl-carousel owl-theme">
                         <div class="item"><img class="flex" src="immagini/immagine1.jpg"></div>
@@ -127,6 +125,21 @@
                 </div>
                 <br>
                 <br>
+
+                <div class="dropdown1">
+                    <h3 class="menuVideo">Video</h1>
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                        <ul>
+                            <li><a id="link1">Siamo Noi - Strage di Piazza della Loggia</a></li>
+                            <li><a id="link2">Registrazione Audio Strage Brescia 1974</a></li>
+                            <li><a id="link3">Blu Notte Misteri Italiani - Piazza Della Loggia Brescia</a></li>
+                        </ul>
+                </div>
+                <div class="video">
+                    <iframe id="video-cambiabile" width="560" height="315" src="https://www.youtube.com/embed/Jq2gagTQvDw" frameborder="0" allowfullscreen frameborder="0" allow="encrypted-media"></iframe>
+                </div>
                 <!--<div class="menu">
                     <div class="bloccoPrimario" style="float: left;">
                         <table>
