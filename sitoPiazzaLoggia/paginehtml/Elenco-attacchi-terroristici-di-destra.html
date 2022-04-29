@@ -1,32 +1,86 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Tour di Animadrop">
-        <meta name="keywords" content="Brescia,Piazza Loggia,Attentato">
-        <meta name="author" content="Gabossi Luca,Panteghini Nicolò,Pasinelli Claudio,Giuseppe Ragusa">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Strage di Piazza Loggia</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <link rel="stylesheet" href="../Css/codice.css">
-        <link rel="stylesheet" href="../risorse/owl.carousel.min.css">
-        <link rel="stylesheet" href="../risorse/owl.theme.default.min.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="../risorse/owl.carousel.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    </head>
-    <body>
-        <script src="../Js/codice.js"></script>
-        <nav id="site-nav" style="flex-wrap: inherit; ">
-            <ul>
-                <li class="zoom borderSolid"><a href="../index.html" title="Home">Home</a></li>
-                <li class="nav-item dropdown justify-content-center float-end" style="margin: 0%; padding: 0%;">
-                    <a class="nav-link dropdown-toggle"   data-bs-toggle="dropdown" role="button" aria-expanded="false">vedi anche</a>
-                    <ul class="dropdown-menu dropdown-menu-end" style="padding: 0%; border-radius: 0%;text-align: left;">
-                        <li><a class="dropdown-item" href="#"  title="attacchi terroristici" class="active" >attacchi terroristici</a></li>
-                        <li><a class="dropdown-item" href="anni-di-piombo.html" title="anni di piombo">Anni di piombo</a></li>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tour di Animadrop">
+    <meta name="keywords" content="Brescia,Piazza Loggia,Attentato">
+    <meta name="author" content="Gabossi Luca,Panteghini Nicolò,Pasinelli Claudio,Giuseppe Ragusa">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strage di Piazza Loggia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Css/codice.css">
+    <link rel="stylesheet" href="../risorse/owl.carousel.min.css">
+    <link rel="stylesheet" href="../risorse/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../risorse/owl.carousel.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+    <script src="../Js/codice.js"></script>
+    <nav id="site-nav" style="flex-wrap: inherit; ">
+        <ul>
+            <li class="zoom borderSolid"><a href="../index.html" title="Home">Home</a></li>
+            <li class="nav-item dropdown justify-content-center float-end" style="margin: 0%; padding: 0%;">
+                <a class="nav-link dropdown-toggle"  data-bs-toggle="dropdown" role="button" aria-expanded="false">vedi anche</a>
+                <ul class="dropdown-menu dropdown-menu-end" style="padding: 0%; border-radius: 0%;text-align: left;">
+                    <li><a class="dropdown-item" href="#"  title="attacchi terroristici" class="active">attacchi terroristici</a></li>
+                    <li><a class="dropdown-item" href="anni-di-piombo.html" title="anni di piombo">Anni di piombo</a></li>
+                </ul>
+            </li>
+        </ul>
+        <img src="../immagini/blue_bottom.png" style="background-color: transparent;width: 100%;max-width: inherit;    transform: translateY(100%);bottom: 0.0625rem;transition: 0.3s ease transform;" alt="...">
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="titolo fadeInTop " style="text-align: center;background-image: none;">Attacchi terroristici</div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../immagini/immagine1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../immagini/immagine3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../immagini/immagine4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+        <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+    </div>
+    <div id="contenitore">
+        <div class="argomento">
+            <div>
+                <h3 class="testoSinistra">Elenco attacchi terroristici neofascisti</h3>
+                <div class="sezione">
+                    Il periodo si caratterizza soprattutto per diverse stragi, tutte ad opera di organizzazioni o elementi di estrema destra, spesso con l'appoggio diretto o il favoreggiamento di settori deviati dello Stato italiano (su alcuni fatti non si è ancora fatta
+                    completa luce). Tra il 1968 e il 1974 in Italia furono compiuti 140 attentati, tra i quali:
+                    <br>
+                    <ul>
+                        <li>12 dicembre 1969: strage di piazza Fontana a Milano <br>(17 morti e 88 feriti; il più cruento di quegli anni, e il secondo più sanguinoso di sempre in Italia dopo la strage di Bologna del 1980);</li>
+                        <li>22 luglio 1970: strage di Gioia Tauro (6 morti e 66 feriti);</li>
+                        <li>31 maggio 1972: strage di Peteano a Gorizia (3 morti e 2 feriti);</li>
+                        <li>17 maggio 1973: strage della Questura di Milano (4 morti e 52 feriti);</li>
+                        <li>28 maggio 1974: strage di piazza della Loggia a Brescia (8 morti e 102 feriti);</li>
+                        <li>4 agosto 1974: strage dell'Italicus (strage sull'espresso Roma-Brennero, 12 morti e 105 feriti);</li>
+                        <li>2 agosto 1980: strage della stazione di Bologna (85 morti e 200 feriti).</li>
                     </ul>
                 </li>
             </ul>
@@ -55,29 +109,32 @@
                     </div>
                     </div>
                 </div>
-                
+
+                <h3 class="testoSinistra"> Strategia della tensione</h3>
+                <div class="sezione">
+                    La strategia della tensione in Italia è una teoria politica che indica generalmente un periodo storico molto tormentato della storia della Repubblica Italiana, in particolare negli anni settanta del XX secolo, conosciuto come anni di piombo e che, mediante
+                    un disegno eversivo, tendeva alla destabilizzazione o al disfacimento degli equilibri precostituiti. L'arco temporale si concentrerebbe in un periodo storico che andrebbe dalla strage di piazza Fontana (12 dicembre 1969) alla strage
+                    di Bologna (2 agosto 1980), sebbene alcuni studiosi retrodatino l'inizio di tale strategia al Piano Solo (1964), il fallito colpo di Stato progettato dal generale dell'Arma dei Carabinieri Giovanni de Lorenzo
+
+
+
+                    <br> Prodromi della strategia della tensione, secondo Vincenzo Vinciguerra, furono nel 1965 il convegno dell'hotel Parco dei Principi e nel 1966 l'Operazione manifesti cinesi.[2] La strategia si basa su una serie preordinata di atti
+                    terroristici volti a diffondere nella popolazione uno stato di insicurezza e di paura, tali da far giustificare, richiedere o auspicare svolte politiche di stampo autoritario; può anche essere attuata sotto forma di tattica militare
+                    che consiste nel commettere attentati dinamitardi e attribuirne la paternità ad altri[3]. Questa strategia era teorizzata in una dispensa, di un corso di guerriglia, intitolata Notre action politique, scritto da Yves Guillou, alias
+                    Yves Guérin-Sérac, capitano nelle guerre di Indocina, Corea e Algeria, militante dell’organizzazione paramilitare clandestina OAS, fondatore e attualmente direttore della Aginter Press. Questo periodo è stato caratterizzato dalla commistione
+                    di un terrorismo neofascista molto violento e da un mai chiarito terrorismo di Stato sostenuto da alcuni settori militari e politici che intendevano attuare un colpo di Stato in funzione anticomunista, specialmente dopo il movimento
+                    del Sessantotto e l'autunno caldo, sostenendo poi la teoria degli opposti estremismi. Tale terrorismo si espresse soprattutto in stragi rivolte senza movente contro cittadini comuni o contro militanti di sinistra e antifascisti. Secondo
+                    alcune interpretazioni questo contribuì alla decisione di esponenti dell'extraparlamentarismo di sinistra a optare per la scelta della lotta armata e del terrorismo, contrapponendosi allo Stato italiano. Nella seconda metà anni '70
+                    si incoraggiò anche le due diverse fazioni di estrema destra e sinistra a una radicalizzazione della lotta armata e a rispondere colpo su colpo, azione su azione all'altrui violenza.
                 </div>
             </div>
         </div>
-        <footer>
-            <table id="footerDati" align="center">
-                <tr>
-                    <td id="footerImmagine">
-                        <img src="../immagini/Brescia-Stemma.png" alt="">
-                    </td>
-                    <td id="footerTesto">
-                        <h3>Progeto Piazza Loggia 2022 5A INT</h3><br>
-                        <ul>
-                            <li><h6>Alunni:</h6></li>
-                            <li>Gabossi Luca</li>
-                            <li>Panteghini Nicol&ograve;</li>
-                            <li>Pasinelli Claudio</li>
-                            <li>Ragusa Giuseppe</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-            <div id="footerCopyright">&copy;OlivelliPutelli 2022</div>
-        </footer>
-    </body>
+    </div>
+    <footer>
+        <table class="footer-table">
+            Informazioni tratte da: Wikipedia
+        </table>
+    </footer>
+</body>
+
 </html>
