@@ -13,12 +13,51 @@
     background-color: transparent;
     box-sizing: 100%;
 }
-
+#footerDati {
+    text-align: center;
+}
+#footerTesto h3 {
+    color: white;
+}
+#footerTesto {
+    text-align: left;
+}
+#footerImmagine img {
+    width: 120px;
+    margin-left: -600px;
+}
+#footerTesto ul {
+    list-style: none;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+footer {
+    grid-row-start: 0;
+    grid-row-end: 5000;
+    text-align: center;
+    border: 0px;
+    padding-top: 60px;
+}
+#footerCopyright {
+    background: #2063a7;
+    margin-top: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .titolo:hover {
     color: #f3c600;
     cursor: pointer;
 }
-
+.titolo {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
 .flex {
     max-width: 100%;
     max-height: 9%;
