@@ -23,7 +23,7 @@
     <script src="Js/codice.js"></script>
     <nav id="site-nav" style="flex-wrap: inherit; ">
         <ul>
-            <li class="zoom borderSolid"><a class="active" href="#Home" title="Home">Home</a></li>
+            <li class="zoom borderSolid"><a class="active" href="#" title="Home">Home</a></li>
             <li class="zoom borderSolid"><a href="#aspetto politico" title="aspetto politico">aspetto politico</a></li>
             <li class="zoom borderSolid"><a href="#vittime" title="vittime">vittime</a></li>
             <li class="zoom borderSolid"><a href="#inteligence" title="inteligence">intelligence statunitense</a></li>
@@ -32,17 +32,12 @@
                 <ul class="dropdown-menu dropdown-menu-end" style="padding: 0%; border-radius: 0%;text-align: left;">
                     <li><a class="dropdown-item" href="paginehtml/Elenco-attacchi-terroristici-di-destra.html" title="attacchi terroristici">attacchi terroristici</a></li>
                     <li><a class="dropdown-item" href="paginehtml/anni-di-piombo.html" title="anni di piombo">Anni di piombo</a></li>
-                    <li><a class="dropdown-item" href="paginehtml/crediti.html" title="crediti">crediti</a></li>
                 </ul>
             </li>
         </ul>
         <img src="immagini/blue_bottom.png" style="background-color: transparent;width: 100%;max-width: inherit; transform: translateY(100%);bottom: 0.0625rem;transition: 0.3s ease transform;" alt="...">
     </nav>
-    <br>
-    <br>
-    <br>
-    <div class="titolo fadeInTop " style="text-align: center;">
-        <a name="Home"></a>Piazza Loggia</div>
+    <div class="titolo fadeInTop " style="text-align: center;">Piazza Loggia</div>
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -168,9 +163,24 @@
         </div>
     </div>
     <footer>
-        <table class="footer-table">
-            Informazioni tratte da: Wikipedia
+        <table id="footerDati" align="center">
+            <tr>
+                <td id="footerImmagine">
+                    <img src="immagini/Brescia-Stemma.png" alt="">
+                </td>
+                <td id="footerTesto">
+                    <h3>Progeto Piazza Loggia 2022 5A INT</h3><br>
+                    <ul>
+                        <li><h6>Alunni:</h6></li>
+                        <li>Gabossi Luca</li>
+                        <li>Panteghini Nicol&ograve;</li>
+                        <li>Pasinelli Claudio</li>
+                        <li>Ragusa Giuseppe</li>
+                    </ul>
+                </td>
+            </tr>
         </table>
+        <div id="footerCopyright">&copy;OlivelliPutelli 2022</div>
     </footer>
     <script type="text/javascript">
         document.getElementById("link1").onclick = function() {
