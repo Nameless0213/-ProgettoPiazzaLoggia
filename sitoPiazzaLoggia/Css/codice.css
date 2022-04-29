@@ -345,7 +345,7 @@ li.zoom:hover {
 }
 
 div#contenitore {
-    margin-left: 10%;
+    margin-left: 5%;
     margin-right: 5%;
     background-color: white;
     padding-top: 30px;
@@ -396,17 +396,6 @@ a:active {
     color: white;
     text-decoration: none;
 }
-
-
-/* comparsa elementi */
-
-
-/*
-.animated {
-    width: 100%;
-    opacity: 0;
-}
-*/
 
 .fadeInLeft {
     -webkit-animation: fadeInLeft 1.2s both;
