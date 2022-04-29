@@ -358,17 +358,6 @@ a:active {
     text-decoration: none;
 }
 
-
-/* comparsa elementi */
-
-
-/*
-.animated {
-    width: 100%;
-    opacity: 0;
-}
-*/
-
 .fadeInLeft {
     -webkit-animation: fadeInLeft 1.2s both;
     -moz-animation: fadeInLeft 1.2s both;
