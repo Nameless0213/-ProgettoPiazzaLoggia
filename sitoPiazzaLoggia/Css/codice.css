@@ -1,19 +1,21 @@
-.titolo {
-    color: #3399ff;
-    font-size: 7vw;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-image: url(../immagini/Brescia-Stemma.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 6.25%;
-    text-shadow: 5px 10px 8px rgb(94, 94, 94, 0.4);
-    transition: all 2s;
-    transform: scale(1);
-    background-color: transparent;
-    box-sizing: 100%;
+/*html*/
+html {
+    height: 100%;
 }
-
+html,body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+/*body*/
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+/*footer*/
 #footerDati {
     text-align: center;
 }
@@ -30,14 +32,6 @@
 #footerTesto ul {
     list-style: none;
 }
-html {
-    height: 100%;
-}
-body {
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: 1fr auto;
-}
 footer {
     grid-row-start: 0;
     grid-row-end: 5000;
@@ -51,35 +45,24 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.titolo:hover {
-    color: #f3c600;
-    cursor: default;
+footer {
+    background: #3399ff;
+    color: white;
+    border-style: solid;
+    border-top: none;
 }
-
-.titolo {
-    margin-top: 70px;
-    margin-bottom: 20px;
-}
-.flex {
-    max-width: 100%;
-    max-height: 9%;
-}
-
-.item {
-    margin-top: 0%;
+footer table.footer-table tr td {
+    border-color: white;
+    border-style: solid;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    border-width: 3px;
     width: 100%;
-    height: 9%;
-    background-color: red;
-    z-index: 11;
+    caption-side: bottom;
+    border-collapse: collapse;
 }
-
-.item:hover {
-    transform: scale(1.1);
-    transition: ease-in-out 0.3s;
-    transition: all 0.7s ease-in-out;
-    overflow: hidden;
-}
-
+/*h2 h3*/
 h2 {
     color: coral;
     text-align: left;
@@ -88,26 +71,97 @@ h2 {
 h3 {
     color: coral;
 }
-
+/*a link*/
+a:link {
+    font-family: fantasy;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: hotpink;
+    text-decoration: none;
+}
+a:active {
+    color: white;
+    text-decoration: none;
+}
+/*classe titolo*/
+.titolo {
+    color: #3399ff;
+    font-size: 7vw;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(../immagini/Brescia-Stemma.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 6.25%;
+    text-shadow: 5px 10px 8px rgb(94, 94, 94, 0.4);
+    transition: all 2s;
+    transform: scale(1);
+    background-color: transparent;
+    box-sizing: 100%;
+}
+.titolo:hover {
+    color: #f3c600;
+    cursor: default;
+}
+.titolo {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.flex {
+    max-width: 100%;
+    max-height: 9%;
+}
+/*classe parallax*/
+.parallax {
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+/*classe item*/
+.item {
+    margin-top: 0%;
+    width: 100%;
+    height: 9%;
+    background-color: red;
+    z-index: 11;
+}
+.item:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+    transition: all 0.7s ease-in-out;
+    overflow: hidden;
+}
+/*classe testodestra testosinistra*/
 .testoDestra {
     text-align: right;
 }
-
 .testoSinistra {
     text-align: left;
 }
-
+/*classe one two three*/
 .one {
     width: 30px;
 }
-
 .two {
     width: 20px;
 }
-
 .three {
     width: 25px;
 }
+/*classe dropdown dpropdown1*/
 .dropdown a:hover{
     background-color: #f3c600;
     transform: scale(1.05);
@@ -123,7 +177,6 @@ h3 {
     transition: 0.3s;
     border-bottom: none;
 }
-
 .dropdown1 {
     width: auto;
     position: relative;
@@ -132,18 +185,15 @@ h3 {
     box-sizing: border-box;
     border-bottom: none;
 }
-
 .dropdown1:hover div {
     width: 30px;
     cursor: pointer;
     border: none;
 }
-
 .dropdown1 ul {
     opacity: 0;
     transition: all 0.3s;
 }
-
 .dropdown1 a {
     opacity: 0;
     display: inline-block;
@@ -155,39 +205,27 @@ h3 {
     box-shadow: 5px 10px 8px rgb(94, 94, 94, 0.4);
     text-align: left;
 }
-
 .dropdown1:hover ul,
 .dropdown1:hover a {
     opacity: 1;
 }
-
-.carousel-control-next:hover,
-.carousel-control-prev:hover {
-    background-color: rgb(0, 0, 0, 0.4);
-}
-
 .dropdown1 a:hover {
     background-color: #f3c600;
     color: white !important;
     transform: scale(1.05);
 }
-
-.menu div.bloccoPrimario {
-    flex: auto;
-    border-style: double;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    order: 1;
+/*classe carousel-control*/
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    background-color: rgb(0, 0, 0, 0.4);
 }
-
+/*classe video*/
 .video {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
     height: 0;
 }
-
 .video iframe {
     position: absolute;
     top: 0;
@@ -195,86 +233,25 @@ h3 {
     width: 100%;
     height: 100%;
 }
-
-
-/*.menu {
-    color: white;
-    float: left;
-    flex-flow: row wrap;
-    display: table;
-    background-color: cornflowerblue;
-    margin-right: 2%;
-    margin-bottom: 0.5%;
-    padding-left: 5px;
-    padding-right: 5px;
-    cursor: pointer;
-    border-radius: 6.25%;
-    border-style: dashed;
-    opacity: 0;
-    transform: scale(0.1);
-    transition: all 1s ease-in-out;
-}*/
-
+/*classe introduzione testo1 testo2 testo3 testo4*/
 .introduzione {
     opacity: 0;
     transform: scale(0.1);
     transition: all 1s ease-in-out;
 }
-
-.scale {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.opacity {
-    opacity: 1;
-}
-
 .testo1 {
     opacity: 0;
 }
-
 .testo2 {
     opacity: 0;
 }
-
 .testo3 {
     opacity: 0;
 }
-
 .testo4 {
     opacity: 0;
 }
-
-
-/*.menu div.bloccoPrimario {
-=======
-.menu div.bloccoPrimario {
->>>>>>> main
-    flex: auto;
-    border-style: double;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    order: 1;
-}
-.menu div.bloccoRipetibile {
-    flex: auto;
-    order: 2;
-}
-.menu h4 {
-    color: rgba(90, 90, 90, 1);
-}*/
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
-}
-
+/*id site-nav*/
 nav#site-nav {
     box-shadow: 5px 10px 8px rgb(94, 94, 94, 0.4);
     position: fixed;
@@ -285,7 +262,6 @@ nav#site-nav {
     box-sizing: content-box;
     z-index: 12;
 }
-
 nav#site-nav ul {
     list-style-type: none;
     margin: 0;
@@ -294,17 +270,11 @@ nav#site-nav ul {
     padding-left: 53.33px;
     padding-right: 80px;
 }
-
 nav#site-nav ul li {
     display: inline-block;
     padding: 5px;
     box-sizing: border-box;
 }
-
-.borderSolid {
-    border-right: 2px solid white;
-}
-
 nav#site-nav img {
     display: block;
     width: 100%;
@@ -318,11 +288,6 @@ nav#site-nav img {
     user-select: none;
     pointer-events: none;
 }
-
-.opacity0 {
-    opacity: 0;
-}
-
 nav#site-nav ul li a {
     font-weight: bold;
     padding: 5px;
@@ -331,27 +296,24 @@ nav#site-nav ul li a {
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 nav#site-nav ul li a.active {
     background: #f7ee6d;
     color: #64635d;
 }
-
 nav#site-nav ul li a:hover {
     transition: ease-in-out 0.3s;
     background: #f7e06d;
 }
-
 #site-nav ul li.zoom {
     transition: transform .2s;
 }
-
+/*classe zoom*/
 li.zoom:hover {
     -ms-transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
-
+/*classe contenitore*/
 div#contenitore {
     margin-left: 5%;
     margin-right: 5%;
@@ -359,59 +321,23 @@ div#contenitore {
     padding-top: 30px;
     margin-bottom: 5%;
 }
-
-#subContenitore {
-    margin-left: 0%;
-    margin-right: 5%;
-    margin-bottom: 10%;
+/*classe scale opacity borderSolid fadeinleft fadeinright fadeintop*/
+.scale {
+    opacity: 1;
+    transform: scale(1);
 }
-
-footer {
-    background: #3399ff;
-    color: white;
-    border-style: solid;
-    border-top: none;
+.opacity {
+    opacity: 1;
 }
-
-footer table.footer-table tr td {
-    border-color: white;
-    border-style: solid;
-    border-bottom: none;
-    border-left: none;
-    border-top: none;
-    border-width: 3px;
-    width: 100%;
-    caption-side: bottom;
-    border-collapse: collapse;
+.borderSolid {
+    border-right: 2px solid white;
 }
-
-a:link {
-    font-family: fantasy;
-    text-decoration: none;
-}
-
-a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    color: hotpink;
-    text-decoration: none;
-}
-
-a:active {
-    color: white;
-    text-decoration: none;
-}
-
 .fadeInLeft {
     -webkit-animation: fadeInLeft 1.2s both;
     -moz-animation: fadeInLeft 1.2s both;
     -o-animation: fadeInLeft 1.2s both;
     animation: fadeInLeft 1.2s both;
 }
-
 @-webkit-keyframes fadeInLeft {
     0% {
         opacity: 0;
@@ -422,7 +348,6 @@ a:active {
         -webkit-transform: translateX(0);
     }
 }
-
 @-moz-keyframes fadeInLeft {
     0% {
         opacity: 0;
@@ -433,7 +358,6 @@ a:active {
         -moz-transform: translateX(0);
     }
 }
-
 @-o-keyframes fadeInLeft {
     0% {
         opacity: 0;
@@ -444,7 +368,6 @@ a:active {
         -o-transform: translateX(0);
     }
 }
-
 @keyframes fadeInLeft {
     0% {
         opacity: 0;
@@ -455,14 +378,12 @@ a:active {
         transform: translateX(0);
     }
 }
-
 .fadeInTop {
     -webkit-animation: fadeInTop 1.2s both;
     -moz-animation: fadeInTop 1.2s both;
     -o-animation: fadeInTop 1.2s both;
     animation: fadeInTop 1.2s both;
 }
-
 @-webkit-keyframes fadeInTop {
     0% {
         opacity: 0;
@@ -473,7 +394,6 @@ a:active {
         -webkit-transform: translateY(0);
     }
 }
-
 @-moz-keyframes fadeInTop {
     0% {
         opacity: 0;
@@ -484,7 +404,6 @@ a:active {
         -moz-transform: translateY(0);
     }
 }
-
 @-o-keyframes fadeInTop {
     0% {
         opacity: 0;
@@ -495,7 +414,6 @@ a:active {
         -o-transform: translateY(0);
     }
 }
-
 @keyframes fadeInTop {
     0% {
         opacity: 0;
@@ -506,14 +424,12 @@ a:active {
         transform: translateY(0);
     }
 }
-
 .fadeInRight {
     -webkit-animation: fadeInRight 1.2s both;
     -moz-animation: fadeInRight 1.2s both;
     -o-animation: fadeInRight 1.2s both;
     animation: fadeInRight 1.2s both;
 }
-
 @-webkit-keyframes fadeInRight {
     0% {
         opacity: 0;
@@ -524,7 +440,6 @@ a:active {
         -webkit-transform: translateX(0);
     }
 }
-
 @-moz-keyframes fadeInRight {
     0% {
         opacity: 0;
@@ -535,7 +450,6 @@ a:active {
         -moz-transform: translateX(0);
     }
 }
-
 @-o-keyframes fadeInRight {
     0% {
         opacity: 0;
@@ -546,7 +460,6 @@ a:active {
         -o-transform: translateX(0);
     }
 }
-
 @keyframes fadeInRight {
     0% {
         opacity: 0;
