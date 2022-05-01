@@ -592,12 +592,12 @@ div#contenitore {
 
 .image-gallery {
     margin: 20px 0 25px 0;
-    width: 660px;
+    width: fit-content;
     margin: 60px auto;
 }
 
 figure {
-    width: 165px;
+    width: 200px;
     float: left;
     margin: 0 20px 0 0;
     background: white;
