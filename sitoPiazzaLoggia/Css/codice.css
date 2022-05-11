@@ -88,6 +88,15 @@ a:active {
     color: white;
     text-decoration: none;
 }
+/*id immagine_blu*/
+#immagine_blu{
+    background-color: transparent;
+    width: 100%;
+    max-width: inherit; 
+    transform: translateY(100%);
+    bottom: 0.0625rem;
+    transition: 0.3s ease transform;
+}
 /*classe titolo*/
 .titolo {
     color: #3399ff;
@@ -328,6 +337,9 @@ div#contenitore {
 }
 .opacity {
     opacity: 1;
+}
+.opacity0{
+    opacity: 0;
 }
 .borderSolid {
     border-right: 2px solid white;

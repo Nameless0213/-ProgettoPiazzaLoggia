@@ -30,6 +30,8 @@ window.addEventListener('scroll',()=>{
     let content3=document.querySelector(".testo3");
     let content4=document.querySelector(".titolo");
     let content5=document.querySelector(".testo1");
+    let content6=document.querySelector("#immagine_blu");
+    let content7=document.querySelector(".punto");
     /*
     dichiarazione dei contentPosition:
     restituisce la posizione esatta della pagina dove il contenuto 
@@ -41,6 +43,8 @@ window.addEventListener('scroll',()=>{
     let content3Position=content3.getBoundingClientRect().top;
     let content4Position=content4.getBoundingClientRect().top;
     let content5Position=content5.getBoundingClientRect().top;
+    let content6Position=content6.getBoundingClientRect().top;
+    let content7Position=content7.getBoundingClientRect().top;
     //restituisce il valore del viwerport (dove si guarda) 
     let screenPosition = window.innerHeight;
     /*
@@ -60,6 +64,21 @@ window.addEventListener('scroll',()=>{
     se si vuole far comparire qualcosa e poi l'asciarlo "fisso" basta togliere l'else in cui viene rimosso il css.
     scale fa lo scale a 1 di base in caso si modifica ma ricordate che cambia anche quelli degli altri content.
     */
+    /*if(content6Position>content7Position){
+        content6.classList.add('opacity0');
+    }
+    else if(content6Position>content1Position){
+        content6.classList.add('opacity');
+    }else{
+        content6.classList.remove('opacity0');
+    }*/
+
+    /*if(content6Position>content1Position){
+        content6.classList.add('opacity0');
+    }
+    else{
+        content6.classList.remove('opacity0');
+    }*/
     if(contentPosition<screenPosition){//.testo4
         content.classList.add('opacity');
         content.classList.add('fadeInLeft');
