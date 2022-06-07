@@ -39,7 +39,7 @@ body {
 
 #footerImmagine img {
     width: 120px;
-    margin-left: -400px;
+    margin-left: -200px;
 }
 
 #footerTesto ul {
@@ -637,4 +637,7 @@ figure:focus {
     -webkit-box-shadow: 0 3px 10px #666;
     -moz-box-shadow: 0 3px 10px #666;
     z-index: 9999;
+}
+.imgindex{
+    width: 60%;
 }
