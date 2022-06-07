@@ -88,6 +88,39 @@
             #footerImmagine img {
                 margin-left: 0px;
             }
+            .piombo{
+                width: 20%;
+                margin-left: 0%;
+            }
+            figure {
+                width: 160px;
+                float: left;
+                margin: 0 20px 0 0;
+                background: white;
+                border: 10px solid white;
+                -webkit-box-shadow: 0 3px 10px #ccc;
+                -moz-box-shadow: 0 3px 10px #ccc;
+                -webkit-transform: rotate(5deg);
+                -moz-transform: rotate(5deg);
+                -webkit-transition: all 0.7s ease;
+                -moz-transition: all 1s ease;
+                position: relative;
+            }
+            figure:hover {
+                -webkit-transform: rotate(-1deg);
+                -moz-transform: rotate(1deg);
+                -webkit-box-shadow: 0 3px 10px #666;
+                -moz-box-shadow: 0 3px 10px #666;
+            }
+
+            figure:focus {
+                outline: none;
+                -webkit-transform: rotate(-3deg) scale(1.5);
+                -moz-transform: rotate(-3deg) scale(1.5);
+                -webkit-box-shadow: 0 3px 10px #666;
+                -moz-box-shadow: 0 3px 10px #666;
+                z-index: 9999;
+            }
         }
     </style>
 </head>
@@ -137,28 +170,35 @@
                 </button>
     </div> -->
 
-    <a name="approfondimento"></a><br><br>
+    <a name="approfondimento"></a><br>
     <div id="contenitore">
-        <section class="image-gallery group">
-            <figure tabindex="1">
-                <img src="../immagini/anni_di_piombo.jpg" alt="jump, matey" />
-                <figcaption>Manifestazione</figcaption>
-            </figure>
-
-            <figure tabindex="2">
-                <img src="../immagini/anni_di_piombo2.jpg" alt="jump, matey" />
-                <figcaption>Polizia</figcaption>
-            </figure>
-
-            <figure tabindex="3">
-                <img src="../immagini/anni_di_piombo3.jpg" alt="jump, matey" />
-                <figcaption>Attentatore</figcaption>
-            </figure>
-
-            <figure tabindex="4">
-                <img src="../immagini/anni_di_piombo4.jpg" alt="jump, matey" />
-                <figcaption>Rivolta</figcaption>
-            </figure>
+        <section class="image-gallery group piombo">
+            <table>
+                <tr>
+                    <td>
+                        <figure tabindex="1">
+                            <img src="../immagini/anni_di_piombo.jpg" alt="jump, matey" />
+                            <figcaption>Manifestazione</figcaption>
+                        </figure>
+            
+                        <figure tabindex="2">
+                            <img src="../immagini/anni_di_piombo2.jpg" alt="jump, matey" />
+                            <figcaption>Polizia</figcaption>
+                        </figure>
+                    </td>
+                    <td>
+                        <figure tabindex="3">
+                            <img src="../immagini/anni_di_piombo3.jpg" alt="jump, matey" />
+                            <figcaption>Attentatore</figcaption>
+                        </figure>
+            
+                        <figure tabindex="4">
+                            <img src="../immagini/anni_di_piombo4.jpg" alt="jump, matey" />
+                            <figcaption>Rivolta</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+            </table>
         </section>
         <div id="introduzione">
             <h3>Gli anni di piombo</h3>
