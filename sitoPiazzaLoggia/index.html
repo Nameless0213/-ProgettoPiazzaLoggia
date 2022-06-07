@@ -18,22 +18,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <style>
-        @media only screen and (max-width: 600px) {/*telefoni*/
+        @media only screen and (max-width: 768px) {/*telefoni*/
             .borderSolid {border-right: none;}
             .immagineblu{opacity: 1;}
             .titolo{
                 color: #3399ff;
-                font-size: 20px;
+                font-size: 7vw;
                 text-align: center;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 background-image: url(../immagini/Brescia-Stemma.png);
                 background-position: center;
                 background-repeat: no-repeat;
-                background-size: 3.25%;
+                background-size: 6.25%;
                 transition: all 2s;
                 transform: scale(1);
                 background-color: transparent;
                 text-shadow: none;
+                box-sizing: 100%;
             }
             nav#site-nav {
                 box-shadow: none;
@@ -95,8 +96,16 @@
             #site-nav ul li.zoom {
                 transition: transform .2s;
             }
-            .slider{
-                width: 37%;
+            div#contenitore {
+                margin-left: 5%;
+                margin-right: 3%;
+                background-color: white;
+                padding-top: 30px;
+                margin-bottom: 5%;
+                overflow: overlay;
+            }
+            .dropdown-item{
+                font-size: 11px;
             }
         }
     </style>
@@ -121,7 +130,7 @@
         <img  class="immagineblu" src="immagini/blue_bottom.png" style="background-color: transparent;width: 100%;max-width: inherit; transform: translateY(100%);bottom: 0.0625rem;transition: 0.3s ease transform;" alt="...">
     </nav>
     <div class="titolo fadeInTop " style="text-align: center;">Piazza Loggia</div><br>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide slider" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -184,7 +193,7 @@
         <div class="testo1">
             <h3 class="testoSinistra">Aspetto politico</h3>
             <div class="sezione">
-                <img src="immagini/immagine8.jpg" style="float:right;"> La prima inchiesta giudiziaria portò alla condanna nel 1979 di un esponente del movimento di estrema destra bresciano , Ermanno Buzzi . Tuttavia, questa prima sentenza è stata annullata
+                <img src="immagini/immagine8.jpg" style="float:right; width: fit-content;"> La prima inchiesta giudiziaria portò alla condanna nel 1979 di un esponente del movimento di estrema destra bresciano , Ermanno Buzzi . Tuttavia, questa prima sentenza è stata annullata
                 nel 1982, ma nel 1983 la Corte di Cassazione ha dichiarato che il processo di appello deve essere rifatto presso la Corte d'Appello di Venezia . Gli indagati furono assolti nel 1985 dal Tribunale di Venezia, e nel 1987 dalla Suprema Corte
                 di Cassazione . Buzzi, ucciso nel 1981 nel carcere di Novara dai neofascisti Pierluigi Concutelli e Mario Tuti , è stato giudicato "un cadavere da portare a termine". Una seconda indagine ha portato all'accusa di un altro attivista di
                 estrema destra; Cesare Ferri , Sergio Latini e Alessandro Stepanoff . Sono stati assolti per mancanza di prove nel 1987; nel 1989 Ferri e Latini furono assolti per aver commesso il reato, Stepanoff per insufficienza di prove. Una terza
@@ -219,13 +228,13 @@
         <br>
         <div class="testo4">
             <h3 class="testoSinistra">I funerali</h3>
-            <div class="sezione">
+            <div>
                 La camera ardente di sei delle otto vittime venne allestita nel salone Vanvitelliano del municipio. Il funerale si svolse nella stessa Piazza della Loggia, luogo dell'attentato, alla presenza del capo dello stato Giovanni Leone, del presidente del consiglio
                 Mariano Rumor e dei principali leader di partito. La cerimonia venne officiata dal vescovo di Brescia Luigi Morstabilini, gli oratori furono il sindacalista Franco Castrezzati, già presente al momento dell'esplosione, il deputato socialista
                 bresciano Gianni Savoldi del comitato antifascista, il segretario della CGIL Luciano Lama a nome di tutti i sindacati e il sindaco di Brescia Bruno Boni. La cerimonia venne interamente pagata dal comune di Brescia alle famiglie delle vittime
                 e vide la partecipazione popolare di circa 500.000 persone. </div>
             <br>
-            <img src="immagini/immagine9.jpg" style="margin-left: 10%;">
+            <img src="immagini/immagine9.jpg" style="width: 100%;">
         </div>
         <br>
         <br>
@@ -233,9 +242,9 @@
         <a name="inteligence"></a><br><br>
         <div class="testo3">
             <h3 class="testoSinistra">Rapporto del 2000 sul presunto coinvolgimento dell'intelligence statunitense </h3>
-            <div class="sezione">
+            <div>
                 <br>
-                <img src="immagini/immagine10.jpg" style="margin-left: 10%;"><br>
+                <img src="immagini/immagine10.jpg" style="width: 100%;"><br>
                 <br> Un rapporto parlamentare del 2000 della coalizione Olive Tree affermava "che gli agenti dei servizi segreti statunitensi erano stati informati in anticipo di diversi attentati terroristici di destra, tra cui l' attentato a Piazza
                 Fontana del dicembre 1969 a Milano e quello a Piazza della Loggia a Brescia cinque anni dopo, ma lo fecero nulla per allertare le autorità italiane o impedire che gli attentati abbiano luogo, inoltre [afferma] che Pino Rauti [attuale leader
                 del Movimento delle Idee Sociali], giornalista e fondatore dell'organizzazione sovversiva di estrema destra Ordine Nuovo, ha ricevuto finanziamenti regolari da un addetto stampa dell'ambasciata americana a Roma. «Quindi, prima ancora che
