@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
     $('.owl-carousel').owlCarousel({
         items: 4,
         loop: true,
@@ -13,6 +13,8 @@ $(document).ready(function() {
         }
     })
 });
+faceva uno scorrimento tipo galleria immagini, 
+(abbiamo usato boostrap quindi non ci serve più)*/
 
 //inizio della funzione scroll (automatica)
 window.addEventListener('scroll',()=>{
