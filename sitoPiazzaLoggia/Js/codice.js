@@ -118,6 +118,3 @@ for(const target of targets){
     observer.observe(target);
 }
 */
-
-
-
