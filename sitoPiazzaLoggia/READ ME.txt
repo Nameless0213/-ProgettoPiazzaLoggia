@@ -1,0 +1,22 @@
+questo sito è stato creato a scopo didattico e informativo sulla strage di piazza loggia,
+preghiamo tutti coloro che vogliono approcciarsi a questo progetto di farlo in modo serio,
+ovviamente tutte le modifiche che farete in futuro assicuratevi di averle fatte in modo tale
+da non causare problemi strutturali alla pagina, ciò significa di non mettere per esempio virus o
+simili nel codice sorgente, e di fare modifiche nel rispetto delle modifiche precedentemente fatte 
+da coloro che vi hanno preceduto, se modificate la pagina fatelo in modo tale da migliorarla sempre 
+in modo positivo, ciò non vuole dire che non possiate eliminare sezioni o elementi precedentemente 
+create da qualcun'altro ma che se lo fate, fatelo bene, ovviamente tutto ciò vale se caricherete la pagina
+sul sito di HOSTING ALTERVISTA, dove si trova ora la pagina, le credenziali di accesso per altervista le trovate 
+qua sotto:
+
+nome utente altervista: stragepiazzaloggia
+password altervista: me4bVUuCfhbH
+
+il progetto si trova anche su github per chi volesse attingere da li, ecco il link della repository: 
+git@github.com:Nameless0213/-ProgettoPiazzaLoggia.git
+per chi volesse visitare la pagina online basta che digiti:  
+stragepiazzaloggia.altervista.org
+lo scopo finale del sito in sostanza è quello di lasciare in eredità un qualcosa di vostro alle generazioni future.
+cordiali saluti da: Gabossi Luca, Pasinelli Claudio, Panteghini Nicolò e Ragusa Giuseppe.
+BUON DIVERTIMENTO.
+
