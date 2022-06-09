@@ -384,6 +384,7 @@ div#contenitore {
     background-color: white;
     padding-top: 30px;
     margin-bottom: 5%;
+    overflow: overlay;
 }
 
 
