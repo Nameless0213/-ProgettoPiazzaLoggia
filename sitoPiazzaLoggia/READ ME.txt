@@ -16,7 +16,7 @@ il progetto si trova anche su github per chi volesse attingere da li, ecco il li
 git@github.com:Nameless0213/-ProgettoPiazzaLoggia.git
 per chi volesse visitare la pagina online basta che digiti:  
 stragepiazzaloggia.altervista.org
-il sito è stato realizzato con il css e il javascript di boostrap v.5.2, e con un css e un javascript realizzati summisutra.
+il sito è stato realizzato con il css e il javascript di boostrap v.5.2, e con un css e un javascript realizzati summisura.
 lo scopo finale del sito in sostanza è quello di lasciare in eredità un qualcosa di vostro alle generazioni future.
 cordiali saluti da: Gabossi Luca, Pasinelli Claudio, Panteghini Nicolò e Ragusa Giuseppe.
 BUON DIVERTIMENTO.
