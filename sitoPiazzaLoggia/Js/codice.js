@@ -1,22 +1,3 @@
-/*$(document).ready(function() {
-    $('.owl-carousel').owlCarousel({
-        items: 4,
-        loop: true,
-        margin: 20,
-        autoplay: true,
-        autoplayTimeout: 10000,
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1
-            }
-        }
-    })
-});
-faceva uno scorrimento tipo galleria immagini, 
-(abbiamo usato boostrap quindi non ci serve più)*/
-
-//inizio della funzione scroll (automatica)
 window.addEventListener('scroll',()=>{
     /*
     dichiarazione dei content:
