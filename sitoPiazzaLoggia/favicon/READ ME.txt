@@ -1,0 +1,17 @@
+sito in cui ho fatto il favicon (icona per il sito):
+https://realfavicongenerator.net/
+
+semplicemente o generato su questo sito una icona selezionando un immagine
+e successivamente ho scaricato il materiale che mi diceva di scaricare
+e l'ho importato in una cartella all'interno del sito nulla di strabiliante
+ma carino.
+
+
+roba che ho importato:
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#007cff">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
